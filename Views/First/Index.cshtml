@@ -1,0 +1,16 @@
+﻿<div class="container">
+    <div class="row">
+        @foreach (var block in Model)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">@block.Title</h5>
+                        <p class="card-text text-muted">@block.Content</p>
+                        <small class="text-black-50">ID блока: @block.Id</small>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
